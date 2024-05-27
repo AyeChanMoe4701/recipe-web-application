@@ -1,0 +1,150 @@
+body{
+	padding-top: 60px;
+}
+
+.card{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+ }
+ 
+.card:hover{
+
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+.about{
+	margin: 5px;
+	padding: 5px;
+	width: 70%;
+}
+.about p{
+	text-align: left;
+}
+.recipe-info {
+	font-size: 0.7rem;
+	margin: 0;
+	margin-right: 0.4rem;
+	border-radius: 0.2rem;
+	padding: 0.2rem 0.3rem;
+}
+.cuisine{
+	background-color: var(--pale-yellow);
+}
+.category{
+	background-color: var(--pale-red);
+}
+.time{
+	background-color: var(--pale-green);
+}
+#to-top{
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 3rem;
+	height: 3rem;
+	background-color:#fff;
+	border-radius: 50%;
+}
+#to-top i{
+	font-size: 3rem;
+	color: #000;
+}
+.fav-icon{
+	font-size:1.5rem;
+}
+.fav-icon.active{
+	color:var(--main-yellow);
+}
+/* For rating */
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    height: 4.5rem;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:start;
+}
+.rate:not(:checked) > input {
+	display:none;
+}
+.rate:not(:checked) > label {
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/*  */
+.comment-content .date{
+	font-size:0.7rem;
+	color:#777777;
+}
+
+
+.star {
+	font-size: 0.9rem;
+}
+.star.checked{
+	color:var(--main-yellow);
+}
+
+.comment-input:focus{
+	border-color:var(--main-yellow);
+}
+.profile-info-detail {
+	box-shadow: 1px 1px 20px rgba(0,0,0,0.1) !important;
+	padding: 2rem;
+}
+.info-image{
+	text-align:center;
+}
+.profile-info-icon{
+	width: 10rem;
+	max-width:100%;
+	font-size: 7rem;
+	line-height: 10rem;
+	border-radius: 50%;
+	border:1px solid black;
+	
+}
+.profile-info-image{
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+}
+.recipe-info {
+	font-size: 0.7rem;
+	margin: 0;
+	margin-right: 0.4rem;
+	border-radius: 0.2rem;
+	padding: 0.2rem 0.3rem;
+}
+#footer-fixed{
+	position:absolute;
+}
